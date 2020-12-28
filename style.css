@@ -1,0 +1,37 @@
+body {
+    background-color: #dbdae4;
+}
+
+h1 {
+    color: #0a3325;
+}
+
+
+h2 {
+    color: #092f80;
+}
+
+h3 {
+    color: #110b6b;
+}
+
+p {
+    color: #2d0981;
+}
+
+nav a {
+    color: #060330
+}
+
+a {
+    color: #3b0864;
+}
+
+.js-logo {
+    width: 50px;
+    height: 50px;
+}
+.chrome-logo {
+    width: 80px;
+    height: 50px;
+}
