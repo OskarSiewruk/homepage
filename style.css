@@ -47,3 +47,31 @@ a {
     margin: 2px 0;
     min-width: 930px;
 }
+
+#internet p {
+    height: 16px;
+    margin: 2px 0;
+    min-width: 930px;
+}
+
+.section-1 {
+    width: 500px;
+    height: 1500px;
+    position: relative;
+}
+
+.div-1 {
+    position: sticky;
+    top: 10px;
+    margin-left: 20px;
+}
+.div-2 {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+.div-3 {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
