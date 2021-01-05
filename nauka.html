@@ -1,129 +1,210 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Strona Główna</a>
-            <a href="nauka.html">Nauka</a>
-            <a href="git.html">Git</a>
-            <a href="inline-block.html">Inline-block</a>
-        </nav>
+      <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="nauka.html">Nauka</a>
+        <a href="git.html">Git</a>
+        <a href="inline-block.html">Inline-block</a>
+      </nav>
     </header>
 
     <main>
+      <header>
+        <h1>Oskar Siewruk - Nauka</h1>
+      </header>
 
-        <header>
-            <h1>Oskar Siewruk - Nauka</h1>
-        </header>
+      <section>
+        <h2>
+          Przejdź do <a href="#html">Html </a><a href="#css">Css </a
+          ><a href="#javascript">Javascript</a>
+          <a href="#terminal"> Terminal</a>
+        </h2>
+        <h2 id="html">HTML</h2>
+        <p>
+          <strong>"strong"</strong><br />
+          <em>"em"</em><br />
+          <b>"b"</b><br />
+          <i>"i"</i><br />
+          "br"<br />
+          "a href="" "<br />
+          img src="" alt="" title=""<br />
+          kebab case, snake case, camel case, pascal case<br />
+          BEM (block__element--modifier) - metoda nazewnictwa class, intuicyjna,
+          nadaje charakter modułowy<br>
+          DOM (Objektowy model dokumetu) sposób reprezentacji złożonych
+          dokumentów XML i HTML w postaci modelu obiektowego - np w dev tools,
+          można powiedzieć że to złożony już w przeglądarce HTML<br />
+          Klany: rodziny w HTML, na zasadzie drzew genealogicznych<br>
+          Node - węzeł czyli element z drzewa<br>
+          Dziedziczenie - przejmowanie własności po rodzicach<br>
+        </p>
+      </section>
 
-        <section>
-            <h2>Przejdź do <a href="#html">Html </a><a href="#css">Css </a><a href="#javascript">Javascript</a>
-                <a href="#terminal"> Terminal</a>
-            </h2>
-            <h2 id="html">HTML</h2>
-            <p><strong>"strong"</strong><br>
-                <em>"em"</em><br>
-                <b>"b"</b><br>
-                <i>"i"</i><br>
-                "br"<br>
-                "a href="" "<br>
-                img src="" alt="" title=""<br>
-                kebab case, snake case, camel case, pascal case<br>
+      <section id="css">
+        <h2>Selektory i atrybuty CSS:</h2>
+        <p>.class - klasa</p>
+        <p>#id - id</p>
+        <p>nav a - element a w nav</p>
+        <p>a - elementy a</p>
+        <p>color: inherit; - color dziedziczony</p>
+        <p>background-color</p>
+        <p>
+          display (inline, block, inline-block) - ustaw charakter liniowy,
+          blokowy lub liniowy z szer i wys jak blokowy
+        </p>
+        <p>
+          overflow (hidden, visible, auto) - pokaż lub ukryj wartość poza box'em
+        </p>
+        <p>max/min-width - max/min szerokość</p>
+        <p>max/min-height - max/min wysokość</p>
+        <p>
+          jedostki: 0, px, %, vw, vh (viewport width/height) - ustala rozmiar
+          według otwartego okna
+        </p>
+        <p>padding (top,right,bottom,left) - wypełnienie wewnętrzne</p>
+        <p>border (top,right,bottom,left) - obramowanie</p>
+        <p>border _px solid(dotted,dashed) #ffffff</p>
+        <p>border-width, border-style, border-color</p>
+        <p>border-radius (rozmiar) - zaokrąglona ramka</p>
+        <p>
+          margin (top,right,bottom,left) wartości px % lub auto - margines
+          zewnętrzny
+        </p>
+        <p>
+          box-sizing: content-box/border-box - charakter box modellingu content
+          + padding i border/automatycznie wyliczany do określonej szerokości
+        </p>
+        <p>position: absolute - pozycjonowanie</p>
+        <p>
+          position: relative - zależne (dla rodzica) zeby zawartość nie uciekała
+        </p>
+        <p>position: static - domyślna wartość</p>
+        <p>position: fixed - zafiksowany w danym miejscu</p>
+        <p>position: sticky - przyklejony</p>
+        <p>do position wyznaczamy wartości top,right,bottom,left</p>
+        <p>
+          z-index: wartość - warstwa z wyższą wartościa będzie przykrywać
+          pozostałe
+        </p>
+        <p>float - przesuwanie do lewej prawej</p>
+        <p>clear: both - wyrównuje float</p>
+        <p>
+          BEM (block__element--modifier) - metoda nazewnictwa class, intuicyjna,
+          nadaje charakter modułowy
+        </p>
+      </section>
 
-            </p>
-        </section>
+      <section>
+        <h2>Specyficzność CSS:</h2>
+        <p>
+          Specificity to zasada, która określa który selektor ma pierwszeństwo w
+          przypadku, kiedy wiele z nich ustawia te same reguły CSS dla tego
+          samego znacznika HTML.
+        </p>
+        <p>
+          !important, style="", #id, .class, element - wyższa wartość nadpisuje
+        </p>
+      </section>
 
-        <section id="css">
-            <h2>Selektory i atrybuty CSS:</h2>
-            <p>.class - klasa</p>
-            <p>#id - id</p>
-            <p>nav a - element a w nav</p>
-            <p>a - elementy a</p>
-            <p>color</p>
-            <p>background-color</p>
-            <p>display (inline, block, inline-block) - ustaw charakter liniowy, blokowy lub liniowy z szer i wys jak
-                blokowy</p>
-            <p>overflow (hidden, visible, auto) - pokaż lub ukryj wartość poza box'em</p>
-            <p>max/min-width - max/min szerokość</p>
-            <p>max/min-height - max/min wysokość</p>
-            <p>jedostki: 0, px, %, vw, vh (viewport width/height) - ustala rozmiar według otwartego okna</p>
-            <p>padding (top,right,bottom,left) - wypełnienie wewnętrzne</p>
-            <p>border (top,right,bottom,left) - obramowanie</p>
-            <p>border _px solid(dotted,dashed) #ffffff</p>
-            <p>border-width, border-style, border-color</p>
-            <p>border-radius (rozmiar) - zaokrąglona ramka</p>
-            <p>margin (top,right,bottom,left) wartości px % lub auto - margines zewnętrzny</p>
-            <p>box-sizing: content-box/border-box - charakter box modellingu content + padding i border/automatycznie
-                wyliczany do określonej szerokości</p>
-            <p>position: absolute - pozycjonowanie</p>
-            <p>position: relative - zależne (dla rodzica) zeby zawartość nie uciekała</p>
-            <p>position: static - domyślna wartość</p>
-            <p>position: fixed - zafiksowany w danym miejscu</p>
-            <p>position: sticky</p>
-            <p>do position wyznaczamy wartości top,right,bottom,left</p>
-            <p>z-index: wartość - warstwa z wyższą wartościa będzie przykrywać pozostałe </p>
-        </section>
+      <section id="internet">
+        <h2>
+          Internet
+          <img src="chrome.jpg" alt="logo chrome" class="chrome-logo" />
+        </h2>
+        <p>
+          HTTP - Hipertext transfer protocol -> protokół do transportowania
+          html'a pobieranie plików ze strony i wyświetlanie
+        </p>
+        <p>HTTPS</p>
+        <p>URL</p>
+        <p>DNS</p>
+        <p>Request -> Response</p>
+        <p>Kod 200 - OK</p>
+        <p>
+          Kod 30x - szukasz w złym miejscu ale przekieruje cię bo wiem gdzie
+        </p>
+        <p>Kod 404 - nie mam tego czego szukasz</p>
+        <p>Kod 50x - błąd wewnętrzny serwera</p>
+      </section>
 
-        <section>
-            <h2>Specyficzność CSS:</h2>
-            <p>!important, style="", #id, .class, element - wyższa wartość nadpisuje</p>
-        </section>
+      <section id="javascript">
+        <h2>
+          JavaScript
+          <img src="js-photo.png" class="js-logo" alt="logo javascript" />
+        </h2>
+        <p>
+          ECMAScript 6+ - ustandaryzowany przez ECMA skryptowy język
+          programowania<br />
+          JavaScript implementuje rzeczy ze specyfikacji ECMASctript<br />
+          Składowe:<br />
+          Wartości, Literały, Funkcje, Zmienne, Operacje porównania, Obiekt<br />
+          Literał - ciąg znaków przy użyciu `(backquote/backtick)<br />
+          Typy proste (Primitive values) w JS: string (''), number, null
+          (niezdefiniwane), boolean (true/false), bigint (liczba większa od
+          2<sup>53</sup>, undefined (niezdefiniowane), *symbol (unikalne
+          opakowanie)<br />
+          immutability - nie można zmieniać wartości primtive values<br />
+        </p>
+        <p>
+          Funkcja:<br />
+          alert(''); Nazwa funkcji('parametr')<br />
+          alert(name); Nazwa funkcji(zmienna name)<br />
+          console.log('');<br />
+          <br>
+          const name = 'nazwa' - nadawanie zmiennej name o wartości nazwa<br />
+          console.log(`Na imię mam ${nazwa} oraz mam ${age} lata`) const -
+          nadaje zmienną o danej wartości<br />
+          let - zmienne, których wartości możemy przepinać, ale definiujemy
+          tylko raz<br />
+          let name = 'wartość'<br />
+          name = 'inna wartość'<br />
+          typeof - sprawdź rodzaj zmiennej<br />
+          const nazwaZmiennej = documenty.querySelector('selektor') - odwołanie
+          do elemetu/selektora<br />
+          getElementsById lub getElementsByClass - było używane kiedyś, teraz
+          używamy powyższego<br />
+          nazwaZmniennejQuerySelector.innerHTML = 'tekst' - wyświetlenie lub
+          zmiana treści elementu<br />
+          Zasada DRY (Don't repeat yourself)<br>
+          język obiektowy<br>
+          zmienne uzupełniamy własnościami (properties)<br>
+          klucz: wartość,<br>
+          funkcje uzupełniamy metodami (metods)<br>
+          dot notation (.) - wybieranie zawartości zmiennej lub funkcji<br>
+          bracket notation []- wybieranie zawartości objektu<br>
+          <br>
+          Funkcja - dostaje dane - argumenty, dla których zwraca jakąś wartość.<br>
+          <img src="function.png" alt="budowa funkcji w js" class="js_logo-image">
+        </p>
+      </section>
+      <section id="terminal">
+        <h2>Terminal</h2>
+        <p>
+          cd C:\ - przejście do kat C<br />
+          cd .. - przejście katalog wyżej<br />
+          cd - wyświetlenie aktualnej ścieżki<br />
+          dir /a (ls)- wyświetl zawartość całą<br />
+          mkdir nazwa - utwórz folder nazwa<br />
+          code . - uruchom Visual Code Studio z obecnego folderu<br />
+          pwd - wyświetl ścieżkę w której się znajduję<br />
+          clear (cls - windows) - czyści konsole<br />
+          ipconfig - wyświetla dane o ip
+        </p>
+      </section>
 
-        <section id="internet">
-            <h2>Internet <img src="chrome.jpg" alt="logo chrome" class="chrome-logo"></h2>
-            <p>HTTP - Hipertext transfer protocol -> protokół do transportowania html'a pobieranie plików ze strony i
-                wyświetlanie</p>
-            <p> HTTPS</p>
-            <p>URL</p>
-            <p>DNS</p>
-            <p>Request -> Response</p>
-            <p> Kod 200 - OK</p>
-            <p> Kod 30x - szukasz w złym miejscu ale przekieruje cię bo wiem gdzie</p>
-            <p>Kod 404 - nie mam tego czego szukasz</p>
-            <p>Kod 50x - błąd wewnętrzny serwera</p>
-        </section>
-
-        <section id="javascript">
-            <h2>JavaScript <img src="js-photo.png" class="js-logo" alt="logo javascript"></h2>
-            <p>ECMAScript 6+ - ustandaryzowany przez ECMA skryptowy język programowania<br>
-                JavaScript implementuje rzeczy ze specyfikacji ECMASctript<br>
-                Składowe:<br>
-                Wartości, Literały, Funkcje, Zmienne, Operacje porównania, Obiekt<br>
-                Literał - ciąg znaków przy użyciu `(backquote/backtick)</p>
-            <p>Funkcje:<br>
-                alert(''); Nazwa funkcji('parametr')<br>
-                alert(name); Nazwa funkcji(zmienna name)<br>
-                console.log('');<br>
-                const name = 'nazwa' - nadawanie zmiennej name o wartości nazwa<br>
-                console.log(`Na imię mam ${nazwa} oraz mam ${age} lata`)</p>
-        </section>
-        <section id="terminal">
-            <h2>Terminal</h2>
-            <p>cd C:\ - przejście do kat C<br>
-                cd .. - przejście katalog wyżej<br>
-                cd - wyświetlenie aktualnej ścieżki<br>
-                dir /a (ls)- wyświetl zawartość całą<br>
-                mkdir nazwa - utwórz folder nazwa<br>
-                code . - uruchom Visual Code Studio z obecnego folderu<br>
-                pwd - wyświetl ścieżkę w której się znajduję<br>
-                clear (cls - windows) - czyści konsole</p>
-        </section>
-
-        <footer>
-            Podsumowanie głównej treści tego dokumentu - stopka
-        </footer>
-
+      <h2 class="test">tekst</h2>
     </main>
 
-</body>
-
+    <footer>Podsumowanie głównej treści tego dokumentu - stopka</footer>
+    <script src="main.js"></script>
+  </body>
 </html>

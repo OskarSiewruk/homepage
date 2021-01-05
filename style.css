@@ -1,77 +1,81 @@
 body {
-    background-color: #dbdae4;
+  background-color: #dbdae4;
 }
 
 h1 {
-    color: #0a3325;
+  color: #0a3325;
 }
 
-
 h2 {
-    color: #092f80;
+  color: #092f80;
 }
 
 h3 {
-    color: #110b6b;
+  color: #110b6b;
 }
 
 p {
-    color: #2d0981;
+  color: #2d0981;
 }
 
 nav a {
-    color: #060330
+  color: #060330;
 }
 
 a {
-    color: #3b0864;
+  color: #3b0864;
 }
 
 .js-logo {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .chrome-logo {
-    width: 80px;
-    height: 50px;
+  width: 80px;
+  height: 50px;
 }
 
 .first-box {
-    display: inline-block;
-    width: 150px;
-    height: 200px;
+  display: inline-block;
+  width: 150px;
+  height: 200px;
 }
 
 #css p {
-    height: 16px;
-    margin: 2px 0;
-    min-width: 930px;
+  height: 16px;
+  margin: 2px 0;
+  min-width: 930px;
 }
 
 #internet p {
-    height: 16px;
-    margin: 2px 0;
-    min-width: 930px;
+  height: 16px;
+  margin: 2px 0;
+  min-width: 930px;
 }
 
-.section-1 {
-    width: 500px;
-    height: 1500px;
-    position: relative;
+.section {
+  width: 500px;
+  height: 1500px;
+  position: relative;
 }
 
-.div-1 {
-    position: sticky;
-    top: 10px;
-    margin-left: 20px;
+.section__first-content {
+  position: sticky;
+  top: 10px;
+  margin-left: 20px;
 }
-.div-2 {
-    position: absolute;
-    right: 50px;
-    top: 30px;
+.section__second-content {
+  position: absolute;
+  right: 50px;
+  top: 30px;
 }
-.div-3 {
-    position: fixed;
-    top: 30px;
-    left: 30px;
+.section__third-content {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+.js_logo-image {
+    width: 300px;
+    height: 150px;
 }
